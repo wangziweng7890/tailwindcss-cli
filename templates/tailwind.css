@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-1: #f0f6ff;
+  --color-primary-2: #d1e2ff;
+  --color-primary-3: #a8c5ff;
+  --color-primary-4: #80a6ff;
+  --color-primary-5: #5784ff;
+  --color-primary-6: #2c5cf7;
+  --color-primary-7: #1b40d1;
+  --color-primary-8: #0e28ab;
+  --color-primary-9: #041585;
+  --color-primary-10: #020b5e;
+}
+
+@layer utilities {
+  .kf-tag {
+    display: inline-block;
+    height: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 0 2px;
+    border-radius: 2px;
+
+    &.yellow {
+      color: rgba(255, 189, 27, 1);
+      background: rgba(255, 189, 27, 0.2);
+    }
+    &.purple {
+      color: rgba(170, 88, 229, 1);
+      background: rgba(170, 88, 229, 0.2);
+    }
+    &.gray {
+      color: rgba(153, 153, 153, 1);
+      background: rgba(153, 153, 153, 0.2);
+    }
+  }
+}

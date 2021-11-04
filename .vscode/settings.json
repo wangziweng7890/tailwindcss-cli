@@ -1,0 +1,9 @@
+{
+  "eslint.validate": ["javascript", "typescript"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.ignoreWords": [
+    "customizer",
+    "eqeqeq",
+    "prettierrc"
+  ]
+}
