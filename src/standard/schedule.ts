@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import shell from 'shelljs';
-import worker from '@/utils/worker';
+import worker from '../utils/worker';
 import chalk from 'chalk';
 import ora from 'ora';
 export default class Schedule {

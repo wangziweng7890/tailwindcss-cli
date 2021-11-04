@@ -7,7 +7,7 @@
 ## Installation
 
 ```bash
-cnpm i kf-tailwindcss
+cnpm i kf-tailwindcss-cli
 ```
 
 ## Usage
