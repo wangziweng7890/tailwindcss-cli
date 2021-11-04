@@ -12,12 +12,12 @@ cnpm i kf-tailwindcss-cli -g
 
 ## Usage
 
-1.Commands:
+1.在你的webpack项目下执行 
 
 ```bash
 kf-tailwindcss init
 ```
 
-2.import tailwind.css in your project
+2.在你的项目文件中引入生成的tailwind.css文件
 
-3.restart your project
+3.重启你的项目
