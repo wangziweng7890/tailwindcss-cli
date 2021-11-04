@@ -1,6 +1,6 @@
 {
   "name": "kf-tailwindcss-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "快速生成webpack项目tailwindcss配置",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     ]
   },
   "bin": {
-    "kf-tailwind": "./dist/bin/index.js"
+    "kf-tailwindcss": "./dist/bin/index.js"
   },
   "repository": {
     "type": "git",
