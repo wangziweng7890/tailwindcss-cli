@@ -24,7 +24,7 @@ export default class Schedule {
   private initPostcssConfig() {
     const spinner = ora(chalk.blue('正在生成postcss.config.js文件，请稍等...')).start();
     const file = fs.readFileSync(worker.getTemplateDir('postcss.config.js'));
-    const filePath = path.join(worker.getWorkDir(), './postcss.config');
+    const filePath = path.join(worker.getWorkDir(), './postcss.config.js');
     fs.writeFileSync(filePath, file);
     spinner.stop();
   }
