@@ -7,12 +7,17 @@
 ## Installation
 
 ```bash
-cnpm i kf-tailwindcss-cli
+cnpm i kf-tailwindcss-cli -g
 ```
 
 ## Usage
 
+1.Commands:
+
 ```bash
-Commands:
 kf-tailwindcss init
 ```
+
+2.import tailwind.css in your project
+
+3.restart your project
