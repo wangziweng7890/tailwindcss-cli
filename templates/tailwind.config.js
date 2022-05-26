@@ -32,6 +32,10 @@ module.exports = {
       regular: '#666666', // 普通文字，段落，正文
       secondary: '#999999', // 说明类文字，不醒目，提示文字
       disabled: '#cccccc', // 禁用类文字
+      warning: '#e6a23c', // 告警色
+      danger: '#FF5D5D', // 危险色
+      banner: '#F5F7FA',
+      btn: '#1F93FF',
       light: {
         // 分割线
         1: '#F0F0F0',
@@ -172,6 +176,7 @@ module.exports = {
       '8': '8x',
       '10': '10px',
       '12': '12px',
+      '14': '14px',
       '16': '16px',
       '20': '20px',
       '24': '24px',
@@ -179,8 +184,13 @@ module.exports = {
       '40': '40px',
       '48': '48px',
       '56': '56px',
-      '64': '64px'
+      '64': '64px',
+      '156': '156px'
     },
+    inset: theme => ({
+      0: '0px',
+      ...theme('spacing')
+    }),
     backgroundColor: theme => theme('colors'),
     backgroundImage: {
       none: 'none',
@@ -246,7 +256,6 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none'
     },
-    container: {},
     cursor: {
       auto: 'auto',
       default: 'default',
@@ -283,6 +292,9 @@ module.exports = {
       ...negative(theme('spacing'))
     }),
     lineHeight: {
+      14: '14px',
+      16: '16px',
+      18: '18px',
       20: '20px',
       24: '24px',
       30: '30px',
@@ -292,6 +304,9 @@ module.exports = {
       full: '100%',
       screen: '100vh'
     },
+    minWidth: (theme, { breakpoints }) => ({
+      '970': '970px'
+    }),
     maxWidth: (theme, { breakpoints }) => ({
       '100': '100px',
       '110': '110px',
@@ -308,6 +323,7 @@ module.exports = {
       '316': '316px',
       '382': '382px',
       '395': '395px',
+      '1445': '1445px',
       none: 'none',
       xs: '20rem',
       sm: '24rem',
@@ -386,12 +402,19 @@ module.exports = {
       '180': '180px',
       '190': '190px',
       '200': '200px',
+      '240': '240px',
       '300': '300px',
       '316': '316px',
       '382': '382px',
       '395': '395px',
       '482': '482px',
       '648': '648px',
+      '812': '812px',
+      '18%': '18%',
+      '38%': '38%',
+      '58%': '58%',
+      '78%': '78%',
+      '100%': '100%',
       '1/2': '50%',
       '1/3': '33.333333%',
       '2/3': '66.666667%',
@@ -695,7 +718,6 @@ module.exports = {
     borderWidth: ['responsive'],
     boxShadow: ['responsive', 'hover', 'focus'],
     boxSizing: ['responsive'],
-    container: ['responsive'],
     cursor: ['responsive'],
     display: ['responsive'],
     divideColor: ['responsive'],
@@ -787,7 +809,9 @@ module.exports = {
     animation: ['responsive']
   },
   corePlugins: {
-    preflight: false // 禁用掉重置样式，不然对现有基础样式有冲突
+    preflight: false, // 禁用掉重置样式，不然对现有基础样式有冲突
+    container: false, // 禁言该类名，否则冲 突太多
+    display: false
   },
   plugins: []
 };
